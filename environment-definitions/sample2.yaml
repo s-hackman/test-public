@@ -1,0 +1,11 @@
+environments:
+  dev:
+    url: https://dev.example.com
+    debug: true
+    replicas: 1
+    database:
+      host: dev-db.example.com
+      port: 5432
+      name: dev_db
+      user: dev_user
+      password: dev_pass
