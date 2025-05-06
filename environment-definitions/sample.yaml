@@ -1,0 +1,33 @@
+environments:
+  dev:
+    url: https://dev.example.com
+    debug: true
+    replicas: 1
+    database:
+      host: dev-db.example.com
+      port: 5432
+      name: dev_db
+      user: dev_user
+      password: dev_pass
+
+  staging:
+    url: https://staging.example.com
+    debug: true
+    replicas: 2
+    database:
+      host: staging-db.example.com
+      port: 5432
+      name: staging_db
+      user: staging_user
+      password: staging_pass
+
+  production:
+    url: https://example.com
+    debug: false
+    replicas: 4
+    database:
+      host: prod-db.example.com
+      port: 5432
+      name: prod_db
+      user: prod_user
+      password: prod_pass
